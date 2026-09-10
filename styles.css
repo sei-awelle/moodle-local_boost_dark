@@ -730,11 +730,15 @@
 }
 [data-bs-theme=dark] .btn.btn-icon.icons-collapse-expand {
   border: 1px solid #2c2e3a;
+  color: var(--bs-gray-300, #dee2e6);
   background-color: transparent;
   border-radius: 7px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+[data-bs-theme=dark] .btn.btn-icon.icons-collapse-expand:hover, [data-bs-theme=dark] .btn.btn-icon.icons-collapse-expand:focus {
+  color: var(--bs-write, #fff);
 }
 [data-bs-theme=dark] .btn.btn-icon.icons-collapse-expand i {
   margin-left: 3px;

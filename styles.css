@@ -739,7 +739,8 @@
 [data-bs-theme=dark] .btn.btn-icon.icons-collapse-expand i {
   margin-left: 3px;
 }
-[data-bs-theme=dark] .btn.btn-icon.icons-collapse-expand + h3 a {
+[data-bs-theme=dark] .course-section .sectionname > a,
+[data-bs-theme=dark] .course-section .sectionname .inplaceeditable > a {
   color: #acbdd9;
 }
 [data-bs-theme=dark] .drawer-toggles .drawer-toggler .btn {

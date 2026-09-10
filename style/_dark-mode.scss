@@ -536,11 +536,19 @@
     }
     .btn.btn-icon.icons-collapse-expand {
         border: 1px solid #2c2e3a;
+        // Core pairs "color: $primary" with a light "$primary-light-background" on
+        // this control. The background is replaced above, so the brand foreground
+        // has to go too, or the chevron keeps a light-mode colour on a dark panel.
+        color: var(--bs-gray-300, #dee2e6);
         background-color: transparent;
         border-radius: 7px;
         display: flex;
         align-items: center;
         justify-content: center;
+        &:hover,
+        &:focus {
+            color: var(--bs-write, #fff);
+        }
         i {
             margin-left: 3px;
         }

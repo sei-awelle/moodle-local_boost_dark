@@ -544,11 +544,15 @@
         i {
             margin-left: 3px;
         }
-        + h3 {
-            a {
-                color: #acbdd9;
-            }
-        }
+    }
+    // Course section names. Keyed off .sectionname rather than off the collapse
+    // control, because core renders the heading at a level that varies with the
+    // nesting depth and omits the control entirely on the site home and when the
+    // course layout is set to "Show one section per page". The second selector
+    // covers edit mode, where core wraps the link in .inplaceeditable.
+    .course-section .sectionname > a,
+    .course-section .sectionname .inplaceeditable > a {
+        color: #acbdd9;
     }
     .drawer-toggles .drawer-toggler .btn {
         background-color: var(--bs-gray-900, #2e3134);
